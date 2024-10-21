@@ -15,16 +15,20 @@ function makeCalculator() {
 
     divide: (num) => (result /= num),
 
-    operate: function (callback, num) {
+    operate(callback, num) {
+      // Method shorthand syntax
       callback(num);
 
       return this;
     },
-    reset: function () {
+
+    reset() {
+      // Method shorthand syntax
       result = 0;
 
       return this;
     },
+
     get result() {
       return result;
     },
